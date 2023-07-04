@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 align="center">Salaries</h2>
+    <table border="1" align="center"  width="400">
+        <tr>
+            <td colspan="2">Salary Adjustment</td>
+
+        </tr>
+        <tr>
+            <td>Salary</td>
+            <td>
+                <div class="p"></div>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <script>
+        const salary = [1100, 2000, 3400,3500];
+        let i=0;
+        let len = salary.length;
+        let text ='';
+
+        for (;i<len;){
+            text+= salary[i]+100 +'<br>';
+            i++;
+        }
+
+        document.querySelector('.p').innerHTML = text
+    </script>
+</body>
+</html>
